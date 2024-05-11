@@ -12,7 +12,7 @@ const Navbar = () => {
   // let conentCss = openMenu ? `` : ``;
 
   return (
-    <header className='bg-[#fff]  dark:bg-[#000] text-[#000] dark:text-[#fff] fixed  w-[100%] justify-center items-center pt-[10px] pb-[10px] z-[100] transition duration-500'>
+    <header className='bg-[#fff]  dark:bg-[#e4dddd0f] dark:backdrop-blur-3xl text-[#000] dark:text-[#fff] fixed  w-[100%] justify-center items-center pt-[10px] pb-[10px] z-[100] transition duration-500'>
     <nav className='relative'>
       <div className='m-auto w-[85%] flex items-center justify-between font-sans mt-[2px]'>
     {/* ------------ Lens LOGO ----------------- */}
