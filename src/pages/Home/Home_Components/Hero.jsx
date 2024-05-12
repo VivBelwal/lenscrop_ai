@@ -47,7 +47,7 @@ const Hero = () => {
 
         <Link to="/about">
           <button 
-        className="bg-[#000] dark:bg-[#fff] text-[1.2rem] px-[2rem] py-[.6rem] my-[10px] dark:my-[20px]  pointer-cursor duration-300 rounded-[10px] text-[#fff] dark:text-[#000] hover:text-[#000] dark:hover:text-[#fff] dark:hover:bg-[#000] border border-[#000] border-solid"
+        className="bg-[#000] dark:bg-[#fff] text-[1.2rem] px-[2rem] py-[.6rem] my-[10px] dark:my-[20px]  pointer-cursor duration-300 rounded-[10px] text-[#fff] dark:text-[#000] hover:text-[#000] dark:hover:text-[#fff] dark:hover:bg-[#000] hover:bg-[#fff] border border-[#000] border-solid"
         >
             Learn More
           </button>

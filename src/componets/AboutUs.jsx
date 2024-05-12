@@ -28,12 +28,12 @@ const AboutUs = () => {
           <Link to="/about">
             <button className="group/learnMore hover:bg-[#000] dark:hover:bg-[#fff] flex justify-center items-center text-[1.2rem] px-[1rem] py-[.6rem] my-[10px]  pointer-cursor duration-300 rounded-[10px] hover:text-[#fff] dark:hover:text-[#000] text-[#000] dark:text-[#fff] bg-transparent border border-[#000] dark:border-[#fff] border-solid ">
               <span>Learn More</span>
-              <span class="ml-2 hidden group-hover/learnMore:inline-block">
+              <span class="ml-2 hidden group-hover/learnMore:inline-block duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#fff dark:#000"
-                  className="w-6 h-6"
+                  fill=" #fff"
+                  className="w-6 h-6 dark:fill-[#000]"
                 >
                   <path
                     fillRule="evenodd"

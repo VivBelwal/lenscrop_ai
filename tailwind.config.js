@@ -9,9 +9,7 @@ module.exports = {
       'navContent' : ['Poppins', 'sans-serif'],
       'heroCotent' : ['Raleway', 'sans-serif'],
     },
-   colors:{
-    'backgroundCard' : 'linear-gradient(30deg, rgba(0,0,0,1) 32%, #132c37 100%)',
-   },
+  
  
     extend: {
       animation: {

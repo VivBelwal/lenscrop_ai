@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import lenscorp from "../assests/images/lenscorp_logo.webp"
 import { ToogleContext } from '../context/ToggleTheme'
@@ -9,10 +9,11 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   let displayMenu = openMenu ? 'flex' : 'hidden';
   let NavLinkActive = 'bg-clip-text text-transparent bg-gradient-to-r from-[#0091ff] to-[#9cfeff]  font-bold '
-  // let conentCss = openMenu ? `` : ``;
 
+  
+ 
   return (
-    <header className='bg-[#fff]  dark:bg-[#e4dddd0f] dark:backdrop-blur-3xl text-[#000] dark:text-[#fff] fixed  w-[100%] justify-center items-center pt-[10px] pb-[10px] z-[100] transition duration-500'>
+    <header id="navbar" className='bg-[#fff]  dark:bg-[#e4dddd0f] dark:backdrop-blur-3xl text-[#000] dark:text-[#fff] fixed  w-[100%] justify-center items-center pt-[10px] pb-[10px] z-[100] transition duration-500'>
     <nav className='relative'>
       <div className='m-auto w-[85%] flex items-center justify-between font-sans mt-[2px]'>
     {/* ------------ Lens LOGO ----------------- */}
@@ -41,9 +42,15 @@ const Navbar = () => {
         <div>
           <NavLink 
           to="/"
-          className={({ isActive, isPending }) => isPending ? "" : isActive ? `${NavLinkActive}` : ""}
+          className={({ isActive, isPending }) => isPending ? "" : isActive ? `${NavLinkActive} group ` : ""}
           >
+            
             Home
+            
+         
+            <div className={`w-[50px] h-[3px]  rounded-[5px] bg-gradient-to-r from-[#0091ff] to-[#9cfeff] group-active:block hidden duration-300`}> 
+
+            </div>
           </NavLink>
         </div>
         <div>
@@ -90,7 +97,7 @@ const Navbar = () => {
       </div>
 
       {/* ------------- Menu content ------------ */}
-      <div className={`sm:hidden ${displayMenu} bg-[#000] absolute text-[#fff] pt-5 pb-5 pl-5 pr-5 line-5 gap-[40px] w-[200px] flex-col top-[74px]  right-0 font-[16px]  font-navContent tracking-wide `}>
+      <div className={`sm:hidden ${displayMenu} bg-[#000] mt-[5px] absolute text-[#fff] pt-5 pb-5 pl-5 pr-5 line-5 gap-[40px] w-[200px] flex-col top-[74px]  right-0 font-[16px]  font-navContent tracking-wide`}>
         <div>
           <NavLink 
           to="https://makemyweb.ai/en"  
@@ -127,7 +134,7 @@ const Navbar = () => {
         </div>
         <div>
           {/* ----------- Toggle Theme Button ---------------- */}
-          <button onClick={() =>toggelMode()}>
+          <button onClick={() =>toggelMode()} >
             {
               darkMode?
                <>
