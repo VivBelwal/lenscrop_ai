@@ -32,9 +32,8 @@ To get started with LensCrop AI Clone, follow these simple steps:
 
 - **Responsive Design:** The application incorporates responsive design, ensuring optimal viewing and interaction experience across a wide range of devices and screen sizes. 
 
-<video controls src="src/assests/reamde/video/lenscrop_ai_responsive.mp4" title="Title"></video>
-![Watch the video](./src/assests/reamde/video/lenscrop_ai_responsive.mp4)
-![Watch the video](https://www.loom.com/share/f218a1a4641f418aab8fd3252695f069)
+
+![Watch the video](https://drive.google.com/file/d/1aJWuYc81l4jRzR3WjjbLv1mSkRnDIhtF/view?usp=sharing)
 
 - Explore the functionalities of LensCrop AI Clone, experiment with different features, and enjoy a seamless experience!
 
