@@ -4,8 +4,6 @@ import { ToogleContext } from "../context/ToggleTheme";
 import lenscorp_light from "../assests/images/lenscorp_logo_light.webp";
 import lenscorp from "../assests/images/lenscorp_logo.webp";
 import { Link, NavLink } from "react-router-dom";
-import styles from "../styles/footer.module.css";
-import facebook from "../assests/images/facebook.png";
 import twitter from "../assests/images/twitter.svg";
 import twitter_dark from "../assests/images/twitter_dark.svg";
 
@@ -105,7 +103,7 @@ const Footer = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     id={logo.name}
-                    className={`${styles.facebook}`}
+                    
                     width="30"
                     height="30"
                     viewBox="0 0 24 24"
@@ -128,7 +126,7 @@ const Footer = () => {
                 <img
                   src={twitter_dark}
                   alt="twitter"
-                  className={`${styles.icons} w-[30px] h-[30px]`}
+                  className={`w-[30px] h-[30px]`}
                 />
               </Link>
             ) : (
@@ -136,7 +134,7 @@ const Footer = () => {
                 <img
                   src={twitter}
                   alt="twitter"
-                  className={`${styles.icons} w-[30px] h-[30px]`}
+                  className={`w-[30px] h-[30px]`}
                 />
               </Link>
             )}

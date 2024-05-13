@@ -3,6 +3,9 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  scrollBehavior: {
+    smooth: 'smooth',
+  },
   darkMode:"selector",
   theme: {
     fontFamily:{

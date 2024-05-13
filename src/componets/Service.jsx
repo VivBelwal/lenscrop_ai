@@ -61,7 +61,7 @@ const Service = () => {
     },
   ];
   return (
-    <div className="grid place-items-center pb-[4rem] bg-[#fcfbf7] dark:bg-[#000]">
+    <div className={`grid place-items-center pb-[4rem]  ${darkMode ?"bg-[#000] " : styles.background_color}`}>
 
       
       <div className="flex flex-col place-items-center gap-[5px]">
@@ -72,7 +72,7 @@ const Service = () => {
         <div className="w-[75px] h-[4px] rounded-[20px] bg-gradient-to-r from-[#0091ff] to-[#9cfeff] "></div>
       </div>
 
-      <div>
+      <div >
         <h1 className={`${topHeaderCss}`}>
           We provide Artificial Intelligence Services
         </h1>

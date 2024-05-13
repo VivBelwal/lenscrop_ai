@@ -9,11 +9,36 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   let displayMenu = openMenu ? 'flex' : 'hidden';
   let NavLinkActive = 'bg-clip-text text-transparent bg-gradient-to-r from-[#0091ff] to-[#9cfeff]  font-bold '
+  const [scrollDirection, setScrollDirection] = useState(null);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const visible = prevScrollY > currentScrollY || currentScrollY < 10;
+    setVisible(visible);
+      if (currentScrollY > prevScrollY) {
+        setScrollDirection('down');
+        console.log('down');
+      } else if (currentScrollY < prevScrollY) {
+        setScrollDirection('up');
+        console.log('up');
 
+      }
+
+      setPrevScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [prevScrollY]);
   
  
   return (
-    <header id="navbar" className='bg-[#fff]  dark:bg-[#e4dddd0f] dark:backdrop-blur-3xl text-[#000] dark:text-[#fff] fixed  w-[100%] justify-center items-center pt-[10px] pb-[10px] z-[100] transition duration-500'>
+    <header id="navbar" className={`${visible ? 'translate-y-0' : 'translate-y-[-100%]'}  bg-[#fff]  dark:bg-[#e4dddd0f] dark:backdrop-blur-3xl text-[#000] dark:text-[#fff] fixed  w-[100%] justify-center items-center pt-[10px] pb-[10px] z-[100] transition duration-300`}>
     <nav className='relative'>
       <div className='m-auto w-[85%] flex items-center justify-between font-sans mt-[2px]'>
     {/* ------------ Lens LOGO ----------------- */}
