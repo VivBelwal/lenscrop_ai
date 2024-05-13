@@ -34,7 +34,11 @@ To get started with LensCrop AI Clone, follow these simple steps:
 
 
 
-https://github.com/VivBelwal/lenscrop_ai/assets/107463324/0d61216b-71e1-4d2f-b6dd-3471d9869663
+
+https://github.com/VivBelwal/lenscrop_ai/assets/107463324/841d538e-f41e-4e67-b567-079c8a85c042
+
+
+
 
 
 - Explore the functionalities of LensCrop AI Clone, experiment with different features, and enjoy a seamless experience!
